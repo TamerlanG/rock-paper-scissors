@@ -26,3 +26,46 @@
   background-color: brown;
   color: white;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 10px;
+}
+
+.playerChoice {
+  font-size: 20px;
+}
+
+.large-btn {
+  width: 100px;
+  height: 40px;
+}
+
+.btn {
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: brown;
+  background-color: white;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.result {
+  text-align: center;
+  position: relative;
+  top: 25%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
