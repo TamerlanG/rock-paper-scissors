@@ -11,15 +11,26 @@
     <h1 class="heading">Welcome to Rock-Paper-Scissors</h1>
     <div class="player">
       <div class="rock">
-        <img src="images/rock.png" alt="rock image" />
+        <img onclick="rockChoice()" src="images/rock.png" alt="rock image" />
       </div>
       <div class="paper">
-        <img src="images/paper.jpg" alt="rock image" />
+        <img src="images/paper.jpg" alt="rock image" onclick="paperChoice()" />
       </div>
       <div class="scissors">
-        <img src="images/scissors.jpg" alt="rock image" />
+        <img
+          src="images/scissors.jpg"
+          alt="rock image"
+          onclick="scissorChoice()"
+        />
       </div>
     </div>
+
+    <footer>
+      <div class="playerChoice">
+        Choose a character to fight with
+      </div>
+    </footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
