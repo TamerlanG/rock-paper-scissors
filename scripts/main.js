@@ -16,6 +16,7 @@ function computerPlay() {
 let playerChoice;
 let characterChoiceText = document.querySelector(".playerChoice");
 let resultText = document.querySelector(".result");
+let computerChoiceText = document.querySelector(".computer-choice");
 
 function rockChoice() {
   playerChoice = "rock";
@@ -40,6 +41,7 @@ function gameStart() {
     if (playerChoice == computerChoice) {
       resultText.innerHTML = "It's a tie ladies and gentlemen";
     } else {
+      computerChoiceText.innerHTML = "Computer Character: " + computerChoice;
       switch (playerChoice) {
         case "rock":
           if (computerChoice == "paper") {
@@ -69,7 +71,6 @@ function gameStart() {
       }
     }
   }
-
   playerChoice = null;
   characterChoiceText.innerHTML = "Please Select A Character Again";
 }
